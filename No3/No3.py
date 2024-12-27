@@ -95,13 +95,13 @@ class Hanoi(object):
 
     def solve(self):
         self.move_tower(3, self.startp, self.destinationp, self.workspacep)
-        t.done()  # Finish the turtle drawing
+        t.done() 
 
 
-# Initialize Turtle window
-t.speed(0)  # Set drawing speed to fastest
-t.bgcolor("white")  # Set background color to white
 
-# Solve the puzzle
+t.speed(0) 
+t.bgcolor("white") 
+
+
 h = Hanoi()
 h.solve()
