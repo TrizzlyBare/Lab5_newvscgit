@@ -25,11 +25,20 @@ class Pole(object):
         self.plength = length
 
     def showpole(self):
+        t.penup()
+        t.goto(self.pxpos, self.pypos)
+        t.setheading(90)
+        t.pendown()
+        t.forward(self.plength)
 
     def pushdisk(self, disk):
+        disk.newpos(self.pxpos - disk.dwidth / 2, self.pypos + len(self.stack) * disk.dheight)
+        self.stack.append(disk)
 
     def popdisk(self):
-        pass
+        if self.stack:
+            return self.stack.pop()
+        return None
 
 
 class Hanoi (Object) :
