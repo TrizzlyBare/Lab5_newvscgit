@@ -29,6 +29,7 @@ class Pole(object):
     def pushdisk(self, disk):
 
     def popdisk(self):
+        pass
 
 
 class Hanoi (Object) :
